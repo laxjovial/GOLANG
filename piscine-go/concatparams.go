@@ -1,0 +1,17 @@
+package piscine
+
+func ConcatParams(args []string) string {
+	if len(args) == 0 {
+		return ""
+	}
+
+	result := ""
+	for i, arg := range args {
+		result += arg
+		if i != len(args)-1 {
+			result += "\n"
+		}
+	}
+
+	return result
+}
